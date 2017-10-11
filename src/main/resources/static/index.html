@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>PDF Join</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#D8D8D8">
+	 <div class="container">
+	     <div class="header clearfix">
+	     	 <h2>Letty-Poc PDF Merge</h2>
+	     </div>
+	     <div class="jumbotron">
+			<form method="post" enctype="multipart/form-data" action="pdf/merge">
+				<div class="form-group">
+					<label for="pdf1">Upload Pdf1:</label>
+					<input type="file" class="form-control" id="pdf1" name="pdf1">
+				</div>
+				<div class="form-group">
+					<label for="pdf2">Upload Pdf2:</label>
+					<input type="file" class="form-control" id="pdf2" name="pdf2">
+				</div>
+				<button type="submit" class="btn btn-primary">Upload</button>
+			</form>
+		</div>
+		<footer class="footer">
+			<p>&copy; Ravelino 2017 =P</p>
+		</footer>
+	</div>	
+  </body>
+</html>
